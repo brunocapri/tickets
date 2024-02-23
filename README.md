@@ -1,27 +1,30 @@
 # Tickets
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+## Running the project
+Prerequisites:
+* Node v18+ installed
+* Angular CLI v17
 
-## Development server
+Steps:
+1. Install dependencies
+```sh
+npm i
+```
+2. Serve
+```sh
+ng serve
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## About
+The project was developed in about 4 hours using Angular 17. <br />
+I started by exploring TicketMaster's API to see all the possibilities. <br />
+Then, I quickly sketched how I wanted the app to look in Figma - this helped me define the priorities and develop in a more objective manner. <br />
+After that, I planned how the components would communicate and started coding. <br />
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## What I would've done different
+I would never expose API keys in the front end. I would definitely create a backend containing the credentials to proxy the requests. Since this is not a real app and TicketMaster's API is free and has rate limits, I considered it okay to directly make the requests and expose the key inside environment.ts. <br />
+I wouldn't use Tailwind to avoid code repetition, but I am very productive with it and it saved me some time. <br />
+I would have created unit and E2E tests. <br />
+I would have used URL query parameters for the queries, to maintain state when sharing links or reloading the page.<br />
+I would have created better error handling.

@@ -15,7 +15,6 @@ npm i
 ng serve
 ```
 
-
 ## About
 The project was developed in about 4 hours using Angular 17. <br />
 I started by exploring TicketMaster's API to see all the possibilities. <br />
@@ -28,3 +27,7 @@ I wouldn't use Tailwind to avoid code repetition, but I am very productive with 
 I would have created unit and E2E tests. <br />
 I would have used URL query parameters for the queries, to maintain state when sharing links or reloading the page.<br />
 I would have created better error handling.
+
+![image](https://github.com/brunocapri/tickets/assets/43188628/ce7c2e32-ef7e-4ed2-90dc-e91db526e53c)
+
+<img src="https://github.com/brunocapri/tickets/assets/43188628/ef14309f-607d-4b1b-b3b9-6153a76045e9" width="40%" />
